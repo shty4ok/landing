@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <div id="headerTop">
-            <div id="logo">
+            <div class="logo">
                 <i class="fas fa-cogs"></i>
                 <p>ИТ-инклуд</p>
             </div>
@@ -54,16 +54,16 @@
             <p>Мы поможем Вам!</p>
         </div>
         <div id="headerBottom">
-
-            <div id="arrow-bottom"></div>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </div>
-    <div class="aboutIT">
+    <div class="price">
+        <p>Более 15 лет на рынке</p>
+    </div>
+    <div class="outsourcing">
         <div>
             <strong>ИТ-АУТСОРСИНГ</strong>
-            <p>Вам важно построить логичную систему, отвечающую
-                единым стандартам, при этом учитывая особенности
-                задач именно Вашей компании?
+            <p>Вам важно построить надежную ИТ структуру учитывающую особенности Вашей компании?
             </p>
         </div>
         <div>
@@ -71,8 +71,24 @@
             <p>В нашей стране под данным видом аутсорсинга чаще всего понимают обслуживание компьютеров, серверов и сетей организации-заказчика. Однако, в мировой практике ит аутсорсинг рассматривается намного шире. К нему относят все виды работ, выполняемых сторонними организациями в области информационных технологий на основе передачи функций компании-заказчика исполнителю на длительный срок.</p>
         </div>
     </div>
-    <div class="slider1">
-
+    <div class="company">
+        <div>
+            <strong>Мы работаем с компаниями любой сложности:</strong>
+        </div>
+        <div id="bisness">
+            <div>
+                <p>Малый бизнес</p>
+                <i class="far fa-building fa-2x"></i>
+            </div>
+            <div>
+                <p>Средний бизнес</p>
+                <i class="far fa-building fa-5x"></i>
+            </div>
+            <div>
+                <p>Крупный бизнес</p>
+                <i class="far fa-building fa-8x"></i>
+            </div>
+        </div>
     </div>
     <div id="skills">
         <div>
@@ -118,8 +134,9 @@
             </ul>
         </div>
     </div>
-    <div class="price">
-        <p>Более 15 лет на рынке</p>
+
+    <div class="slider1">
+
     </div>
     <div class="aboutUs">
         <div id="aboutUsText">
@@ -130,25 +147,8 @@
             <p>За это время накопили большой опыт и готовы предоставить весь необходимый комплекс услуг.</p>
             <p>Зачастую клиент не знает кому довериться.</p>
             <p>Мы поможем разобраться во всем!</p>
-            <div>
-                <p>Мы работаем с компаниями любых масштабов:</p>
-            </div>
-        </div>
-         <div id="aboutUsBisness">
-                <div>
-                    <i class="far fa-building fa-2x"></i>
-                    Малый бизнес
-                </div>
-                <div>
-                    <i class="far fa-building fa-5x"></i>
-                    Средний бизнес
-                </div>
-                <div>
-                    <i class="far fa-building fa-8x"></i>
-                    Крупный бизнес
-                </div>
-         </div>
 
+        </div>
     </div>
     <div class="slider">
         <div class="slider__wrapper">
@@ -192,8 +192,11 @@
         <a class="slider__control slider__control_left slider__control_show" href="#" role="button"></a>
         <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
     </div>
-
     <div id="footer">
+        <div class="logo">
+            <i class="fas fa-cogs"></i>
+            <p>ИТ-инклуд</p>
+        </div>
         <nav class="menu">
             <div>
                 <a href="#skills">
@@ -235,5 +238,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="script/script.js"></script>
     <script src="script/sliderScript.js"></script>
+    <script src="script/hideArrow.js"></script>
 </body>
 </html>

@@ -39,20 +39,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70px;
 }
-#logo {
+#headerBottom .fa-chevron-down {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+    animation: arrow 2s infinite;
+}
+@keyframes arrow {
+    0%{
+        color: greenyellow;
+    }
+    100% {
+        padding: 15px;
+        color: orangered;
+    }
+}
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    color: greenyellow;
 }
-#logo p {
+.logo p {
     font-size: 30px;
     font-weight: bold;
     color: greenyellow;
 }
-#logo i{
+.logo i{
     font-size: 100px;
-    color: greenyellow;
     padding: 0 15px 0 0;
 }
 .menu {
@@ -73,6 +92,7 @@ body {
     background-color: black;
 }
 .menu div:hover {
+    cursor: pointer;
     background-color: cornflowerblue;
 }
 .menu a {
@@ -91,21 +111,63 @@ body {
 #headerContact p {
     padding: 0 10px;
 }
-#arrow-bottom {
-    border: 10px solid transparent;
-    margin: 30px 10px;
-    border-top-color: white;
-    width: 3px;
+.company {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255,255,255);
+    padding: 60px 0 60px 0;
 }
-
-
-#footer {
+.company div strong {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.company #bisness div .fa-2x{
+    color: chartreuse;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    animation: show 6s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+}
+.company #bisness div .fa-5x{
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    color: orange;
+    animation: show 6s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 2s; /* Задержка перед началом */
+}
+.company #bisness div .fa-8x{
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    color: orangered;
+    animation: show 6s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 3s; /* Задержка перед началом */
+}
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.company #bisness {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    min-height: 200px;
+    align-items: flex-end;
 }
-.aboutIT {
+.company #bisness div {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.outsourcing {
     display: flex ;
     justify-content: space-between;
     align-items: center;
@@ -113,11 +175,11 @@ body {
     background-color: rgba(255,255,255,0.7);
     padding: 80px 0 80px 0;
 }
-.aboutIT div {
+.outsourcing div {
     padding: 5px 10px;
     margin: 15px;
 }
-.aboutIT div p {
+.outsourcing div p {
     margin-left: 15px;
 }
 .slider1 {
@@ -152,19 +214,19 @@ body {
     border-radius: 3px;
 }
 #skills li {
-list-style: none;
+    list-style: none;
     margin: 10px 20px 0 0;
 }
 #skills li::before {
-font-family: "Font Awesome 5 Free";
-content: "\f14a";
-padding: 0 5px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f14a";
+    padding: 0 5px;
     color: red;
 }
 #motivation {
     display: flex;
     justify-content: center;
- }
+}
 #motivation div {
     display: flex;
     align-items: center;
@@ -177,7 +239,7 @@ padding: 0 5px;
     margin: 100px;
     color: white;
     font-size: 21px;
- }
+}
 #motivation i {
     font-size: 30px;
 }
@@ -194,35 +256,38 @@ padding: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 0 40px 0;
 }
 .aboutUs #aboutUsText p{
     text-align: center;
     margin: 0;
 }
-.aboutUs #aboutUsText strong p {
+    .aboutUs #aboutUsText strong p {
     margin-bottom: 30px;
 }
-.aboutUs #aboutUsBisness {
+.aboutUs #bisness {
     display: flex;
 }
-.aboutUs #aboutUsBisness div {
+.aboutUs #bisness div {
     padding: 0 50px;
 }
 .aboutUs div { margin: 20px 0 20px 0;}
 .aboutUs div strong {
     text-transform: uppercase;
     font-size: 25px;
-
 }
 #footer {
-    background-color: rgba(39,47,51, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+    background-color: rgba(39,47,51, 0.9);
     margin: 0 0 25px 0;
 }
 #footer li {
     display: flex;
     align-items: center;
 }
-
 #contacts li p {
     margin: 0;
     padding: 0 0 0 10px;
@@ -274,14 +339,14 @@ padding: 0 5px;
 }
 
 .slider__item {
+    display: flex;
+    justify-content: center;
     flex: 0 0 33.333333%;
     max-width: 44.333333%;
 }
 .slider__item img {
     display: flex;
-    padding-left: 30%;
     height: 150px;
-    margin: 20px 0 0 0;
 }
 
 .slider__control {
