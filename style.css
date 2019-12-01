@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 25px 0 25px 0;
     display: flex;
     flex-direction: column;
     background-image: url("img/img_v3.jpg");
@@ -12,12 +11,34 @@ body {
     font-family: "Arial, Helvetica, sens-serif";
 }
 .header {
+    padding: 25px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(39,47,51, 0.3);
+}
+#headerTop {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     opacity: 0.7;
     padding: 20px;
-    min-height: 700px;
+}
+#headerCenterText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+#headerCenterText p {
+}
+#headerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #logo {
     display: flex;
@@ -25,48 +46,60 @@ body {
     align-items: flex-end;
 }
 #logo p {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    color: yellow;
+    color: greenyellow;
 }
 #logo i{
     font-size: 100px;
     color: greenyellow;
     padding: 0 15px 0 0;
 }
-#menu {
-    padding: 20px 150px 0 150px ;
+.menu {
+    padding: 20px 20px 0 150px ;
     display: flex;
     justify-content: space-around;
 }
-#menu div {
+.menu div {
     display: flex;
     padding: 0 30px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
     margin: 0 10px;
-    min-width: 140px;
+    min-width: 240px;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
-#menu a {
+.menu div:hover {
+    background-color: cornflowerblue;
+}
+.menu a {
    text-decoration: none;
     color: white;
 }
-#menu a:visited {
+.menu a:visited {
     text-decoration: none;
 }
 #headerContact {
     display: flex;
     align-items: center;
-    font-weight: bold;
-
+    font-weight: bolder;
+    margin-top: 30px;
 }
 #headerContact p {
     padding: 0 10px;
 }
-body #motivation, #footer {
+#arrow-bottom {
+    border: 10px solid transparent;
+    margin: 30px 10px;
+    border-top-color: white;
+    width: 3px;
+}
+
+
+#footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,9 +110,8 @@ body #motivation, #footer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: white;
-    opacity:0.7;
-    padding: 30px 0 30px 0;
+    background-color: rgba(255,255,255,0.7);
+    padding: 80px 0 80px 0;
 }
 .aboutIT div {
     padding: 5px 10px;
@@ -88,36 +120,50 @@ body #motivation, #footer {
 .aboutIT div p {
     margin-left: 15px;
 }
-.slider {
+.slider1 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("./img/solution-implementation1.jpg");
-    min-height: 200px;
+    min-height: 500px;
 }
-.slider p {
+.slider1 p {
     font-size: 50px;
     color: white;
 }
 #skills {
     display: flex;
     justify-content: space-around;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 100px 0 100px 0;
+}
+#skills div {
+    border: rgba(255,255,255,0.1) solid 2px;
+    border-radius: 10px;
     background-color: white;
-    opacity: 0.7;
-    padding: 30px 0 30px 0;
+}
+#skills div:hover {
+    box-shadow: 0 0 10px black;
+}
+#skills div strong p {
+    background-color: cornflowerblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
 }
 #skills li {
-    list-style: none;
+list-style: none;
+    margin: 10px 20px 0 0;
 }
 #skills li::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f14a";
-    padding: 0 5px;
+font-family: "Font Awesome 5 Free";
+content: "\f14a";
+padding: 0 5px;
     color: red;
 }
 #motivation {
     display: flex;
-    padding: 25px 0 25px 0;
+    justify-content: center;
  }
 #motivation div {
     display: flex;
@@ -130,8 +176,11 @@ body #motivation, #footer {
     min-width: 150px;
     margin: 100px;
     color: white;
-    font-size: 22px;
+    font-size: 21px;
  }
+#motivation i {
+    font-size: 30px;
+}
 .price {
     display: flex;
     align-items: center;
@@ -140,14 +189,34 @@ body #motivation, #footer {
     background-color: cadetblue;
     color: white;
 }
-.company {
+.aboutUs {
+    background-color: #dde0e7;
     display: flex;
-    background-color: white;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutUs #aboutUsText p{
+    text-align: center;
+    margin: 0;
+}
+.aboutUs #aboutUsText strong p {
+    margin-bottom: 30px;
+}
+.aboutUs #aboutUsBisness {
+    display: flex;
+}
+.aboutUs #aboutUsBisness div {
+    padding: 0 50px;
+}
+.aboutUs div { margin: 20px 0 20px 0;}
+.aboutUs div strong {
+    text-transform: uppercase;
+    font-size: 25px;
+
 }
 #footer {
-    opacity: 0.7;
-    background-color: white;
+    background-color: rgba(39,47,51, 0.3);
+    margin: 0 0 25px 0;
 }
 #footer li {
     display: flex;
@@ -160,6 +229,7 @@ body #motivation, #footer {
 }
 #contacts {
     font-size: 18px;
+    color: white;
 }
 #contacts li{
     list-style: none;
@@ -188,4 +258,86 @@ body #motivation, #footer {
     left: 50%;
     top: 50%;
     position: absolute;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    padding: 40px 0 50px 0;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.9s ease;
+    align-items: center;
+}
+
+.slider__item {
+    flex: 0 0 33.333333%;
+    max-width: 44.333333%;
+}
+.slider__item img {
+    display: flex;
+    padding-left: 30%;
+    height: 150px;
+    margin: 20px 0 0 0;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__control_show {
+    display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
 }

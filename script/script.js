@@ -3,7 +3,7 @@ $(window).load(function () {
     $(".loader").delay(100).fadeOut("slow");
 });
 $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
+    $('.' + 'menu').on("click","a", function (event) {
         event.preventDefault();
             var id  = $(this).attr('href'),
                 top = $(id).offset().top;
