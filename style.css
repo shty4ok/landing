@@ -3,8 +3,10 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("img/img_v3.jpg");
+    background-image: url("img/8891c3d40bb9.jpg");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
     min-height: 100%;
     width: 100%;
     min-width: 100%;
@@ -27,8 +29,7 @@ body h1 {
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(39,47,51, 0.3);
-
+    background-color: rgba(39,47,51, 0.5);
 }
 #headerTop {
     display: flex;
@@ -42,6 +43,7 @@ body h1 {
 
 .logo {
     color: cornflowerblue;
+
 }
 .logo a {
     text-decoration: none;
@@ -160,7 +162,6 @@ body h1 {
 .company #bisness div{
     padding: 15px;
     border: 1px;
-    background-color: rgba(0,156,257,0.8);
 }
 .company #bisness div .fa-2x{
 opacity:0; /*Элемент полностью прозрачный (невидимый)*/
@@ -190,7 +191,7 @@ animation-delay: 3s; /* Задержка перед началом */
 }
 .outsourcing {
     display: flex ;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     background-color: rgba(255,255,255,0.7);
@@ -199,37 +200,29 @@ animation-delay: 3s; /* Задержка перед началом */
 .outsourcing div {
     padding: 5px 10px;
     margin: 15px;
+    width: 1000px;
 }
 .outsourcing div p {
     margin-left: 15px;
-}
-.slider1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./img/solution-implementation1.jpg");
-    min-height: 500px;
-}
-.slider1 p {
-    font-size: 50px;
-    color: white;
 }
 #skills {
     display: flex;
     justify-content: space-around;
     background-color: rgba(255,255,255, 0.7);
     padding: 100px 0 100px 0;
+    background-color: rgba(0,100,104,0.4);
 }
 #skills div {
     border: rgba(255,255,255,0.1) solid 2px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(0,100,104,1);
+    color: white;
+;
 }
 #skills div:hover {
     box-shadow: 0 0 10px black;
 }
 #skills div strong p {
-    background-color: cornflowerblue;
     padding: 10px;
     text-align: center;
     border-radius: 3px;
@@ -243,6 +236,17 @@ animation-delay: 3s; /* Задержка перед началом */
     content: "\f14a";
     padding: 0 5px;
     color: red;
+}
+.slider1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/solution-implementation1.jpg");
+    min-height: 500px;
+}
+.slider1 p {
+    font-size: 50px;
+    color: white;
 }
 #price {
     display: flex;
@@ -272,7 +276,7 @@ animation-delay: 3s; /* Задержка перед началом */
 .aboutUs #bisness div {
     padding: 0 50px;
 }
-.aboutUs div { margin: 20px 0 20px 0;}
+.aboutUs div { margin: 20px 0}
 .aboutUs div strong {
     text-transform: uppercase;
     font-size: 25px;
