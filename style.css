@@ -29,7 +29,7 @@ body h1 {
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(39,47,51, 0.5);
+    background-color: rgba(39,47,51, 0.8);
 }
 #headerTop {
     display: flex;
@@ -39,6 +39,7 @@ body h1 {
     width: 100%;
     position: fixed;
     text-transform: uppercase;
+    z-index: 999;
 }
 
 .logo {
@@ -89,7 +90,6 @@ body h1 {
 #headerCenterText {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-top: 10%;
     color: white;
 }
@@ -123,18 +123,30 @@ body h1 {
 #motivation {
 }
 #motivation div {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: rgba(0,0,0, 0.6);
-    min-height: 150px;
+    min-height: 250px;
     min-width: 150px;
-    margin: 30px;
+    margin-left: 60px;
     color: white;
     font-size: 21px;
-
 }
+#motivation #serv {
+    z-index: 1;
+}
+#motivation #comp {
+    margin: 130px 0 0 190px;
+    z-index:  2;
+}
+#motivation #eq {
+    margin: 330px 0 0 100px;
+    z-index: 3;
+}
+
 #motivation i {
     font-size: 30px;
 }
@@ -288,6 +300,9 @@ animation-delay: 3s; /* Задержка перед началом */
     min-height: 200px;
     background-color: rgba(39,47,51, 0.9);
     margin: 0 0 25px 0;
+}
+#footer .logo {
+    text-transform: uppercase;
 }
 #footer li {
     display: flex;
