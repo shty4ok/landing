@@ -3,7 +3,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("img/8891c3d40bb9.jpg");
+    background-image: url("img/img_v3.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -29,7 +29,7 @@ body h1 {
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(39,47,51, 0.8);
+    background-color: rgba(25,47,51, 0.4);
 }
 #headerTop {
     display: flex;
@@ -90,7 +90,7 @@ body h1 {
 #headerCenterText {
     display: flex;
     justify-content: space-around;
-    margin-top: 10%;
+    margin-top: 20%;
     color: white;
 }
 #headerCenterText div {
