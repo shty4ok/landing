@@ -1,240 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>IT company</title>
+
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div id="headerTop">
-            <div class="logo">
-                <i class="fas fa-cogs"></i>
-                <p>ИТ-инклуд</p>
-            </div>
-            <nav class="menu">
-                <div>
-                    <a href="#skills">
-                      <p>Услуги</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#motivation">
-                        <p>Компании</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#contacts">
-                        <p>Контакты</p>
-                    </a>
-                </div>
+    <header>
+        <section id="headerTop">
+            <article class="logo">
+                <a href="index.html">
+                    <i class="fas fa-cogs"></i>
+                    <p>IT-remote</p>
+                </a>
+            </article>
+            <nav class="menu slowMove">
+                <ul>
+                    <li><a href="#skills">О Компании</a></li>
+                    <li><a href="#label"><p>Направления деятельности</p></a></li>
+                    <li><a href="#contacts"><p>Контакты</p></a></li>
+                </ul>
             </nav>
-            <div id="headerContact">
+            <article id="headerContact">
                 <i class="fas fa-mobile-alt"></i>
                 <p>+7(900)111-22-33</p>
-            </div>
-        </div>
-        <div id="headerCenterText">
-            <p>Вам нужна помощь?</p>
-            <div id="motivation">
-                <div>
+            </article>
+        </section>
+        <section id="headerCenterText">
+            <section class="slowMove">
+                <article>
+                    <h1>Информационные Технологии - наш бизнес уже более 20 лет. </h1>
+                    <p></p>
+                    <p>Вас больше не радует уровень Цифровизации Вашей компании, Вы столкнулись с проблемами в IT - обратитесь к нам - цифровизирум, решим проблемы!</p>
+                    <a href="#price" ><h3>Подробнее</h3></a>
+                    <h1></h1>
+                </article>
+            </section>
+            <section id="motivation">
+                <article id="serv">
                     <i class="fas fa-server"></i>
+                    <p>Сети</p>
+                    <a href="./html/servers.html">Подробнее</a>
+                </article>
+                <article id="comp">
+                    <i  class="fas fa-desktop"></i>
                     <p>Сервера</p>
-                </div>
-                <div>
-                    <i class="fas fa-desktop"></i>
-                    <p>Компьютеры</p>
-                </div>
-                <div>
+                    <a href="./html/computers.html">Подробнее</a>
+                </article>
+                <article id="eq">
                     <i class="fas fa-print"></i>
-                    <p>Оргтехника</p>
-                </div>
-            </div>
-            <p>Мы поможем Вам!</p>
+                    <p>Компьютеры</p>
+                    <p>и оргтехника</p>
+                    <a href="./html/equipment.html">Подробнее</a>
+                </article>
+            </section>
+        </section>
+        <section>
+            <article id="headerBottom">
+                <i class="fas fa-chevron-down"></i>
+            </article>
+        </section>
+    </header>
+    <main>
+        <div id="price">
+            <article>
+                <p>Информационные системы, комплексы и сети - наша специальность</p>
+            </article>
         </div>
-        <div id="headerBottom">
-            <i class="fas fa-chevron-down"></i>
+        <div class="outsourcing">
+            <section>
+                <article>
+                    <h2>ИТ-аутсорсинг</h2>
+                    <p>ИТ-аутсорсинг (англ. IT outsourcing) — частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры специализированной компании, профильным направлением деятельности которой является решение задач в сфере ИТ.</p>
+                </article>
+                <article>
+                    <h2>Инфраструктура</h2>
+                    <p>Вам важно построить надежную ИТ-инфраструктуру, учитывающую особенности Вашей компании?</p>
+                    <strong>Мы готовы ответить на Ваши вопросы</strong>
+            </article>
+                <article>
+                    <h2>ИТ-Безопасность</h2>
+                    <p>Конфиденциальность и безопасность данных компании -</p>
+                    <p>только Вы имеете к ним доступ и можете распоряжаться ими</p>
+            </article>
+            </section>
         </div>
-    </div>
-    <div class="price">
-        <p>Более 15 лет на рынке</p>
-    </div>
-    <div class="outsourcing">
+        <div class="company">
+                <section>
+                    <h2>Мы работаем с компаниями:</h2>
+                </section>
+                <section id="bisness">
+                    <article>
+                        <p>Малый бизнес</p>
+                        <i class="far fa-building fa-2x"></i>
+                    </article>
+                    <article>
+                        <p>Средний бизнес</p>
+                        <i class="far fa-building fa-5x"></i>
+                    </article>
+                    <article>
+                        <p>Крупный бизнес</p>
+                        <i class="far fa-building fa-8x"></i>
+                    </article>
+                </section>
+        </div>
+        <div id="skills">
+            <section>
+                <h3>ИТ Аудит</h3>
+                <ul>
+                    <li>Экспертная оценка</li>
+                    <li>Технический аудит</li>
+                    <li>Аудит ИТ процессов</li>
+                    <li>Комплексный аудит</li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    <p>Направления</p>
+                </h3>
+                <ul>
+                    <li>Обслуживание серверов</li>
+                    <li>Обслуживание компьютеров</li>
+                    <li>Виртуализация</li>
+                    <li>Облачные решения</li>
+                    <li>Защита информации</li>
+                    <li>Внедрение документооборота</li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    <p>ИТ Решения</p>
+                </h3>
+                <ul>
+                    <li>Настройка IP телефонии</li>
+                    <li>Установка видеонаблюдения</li>
+                    <li>Систесмы контроль доступа</li>
+                    <li>Подбор ИТ персонала</li>
+                    <li>Организация Helpdesk</li>
+                    <li>Обслуживание оргтехники</li>
+                    <li>Разработка сайтов</li>
+                </ul>
+            </section>
+        </div>
+        <div class="aboutUs">
+            <section>
+                <article id="aboutUsText">
+                    <h1>
+                        <p>О нас</p>
+                    </h1>
+                    <p>Наш опыт - более 20 лет работы в сфере ИТ.</p>
+                    <p>Мы готовы предоставить весь необходимый комплекс услуг - </p>
+                    <p>- техническая поддержка сетевой инфраструктуры, IP-телефонии, серверов, ПК, систем контроля доступа, видеонаблюдения.</p>
+                     </br>
+                    <p>Мы поможем разобраться с ИТ!</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
         <div>
-            <strong>ИТ-АУТСОРСИНГ</strong>
-            <p>Вам важно построить надежную ИТ структуру учитывающую особенности Вашей компании?
-            </p>
-        </div>
-        <div>
-            <strong>Рынок ИТ-аутсорсинга в России</strong>
-            <p>В нашей стране под данным видом аутсорсинга чаще всего понимают обслуживание компьютеров, серверов и сетей организации-заказчика. Однако, в мировой практике ит аутсорсинг рассматривается намного шире. К нему относят все виды работ, выполняемых сторонними организациями в области информационных технологий на основе передачи функций компании-заказчика исполнителю на длительный срок.</p>
-        </div>
-    </div>
-    <div class="company">
-        <div>
-            <strong>Мы работаем с компаниями любой сложности:</strong>
-        </div>
-        <div id="bisness">
-            <div>
-                <p>Малый бизнес</p>
-                <i class="far fa-building fa-2x"></i>
+            <div class="logo">
+                <i class="fas fa-cogs"></i>
+                <p>IT-remote</p>
             </div>
-            <div>
-                <p>Средний бизнес</p>
-                <i class="far fa-building fa-5x"></i>
-            </div>
-            <div>
-                <p>Крупный бизнес</p>
-                <i class="far fa-building fa-8x"></i>
+            <div id="contacts">
+                <h3>Контакты:</h3>
+                <ul>
+                    <li>Санкт-Петербург</li>
+                    <li>
+                        <i class="fas fa-phone-volume"></i>
+                        <p>(812) 999-55-22</p>
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <p>main@it-remote.ru</p>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div id="skills">
-        <div>
-            <strong>
-                <p>ИТ Аудит
-                </p>
-            </strong>
-            <ul>
-                <li>Обследование</li>
-                <li>Экспертная оценка</li>
-                <li>Технический аудит</li>
-                <li>Аудит ИТ бизнес-процесса</li>
-                <li>Аудит критерия</li>
-                <li>Комплексный аудит</li>
-            </ul>
-        </div>
-        <div>
-            <strong>
-                <p>Направления</p>
-            </strong>
-            <ul>
-                <li>Обслуживание серверов</li>
-                <li>Обслуживание компьютеров</li>
-                <li>Виртуализация</li>
-                <li>Облачные решения</li>
-                <li>Защита информации</li>
-                <li>Аренда серверов</li>
-                <li>Внедрение документооборота</li>
-            </ul>
-        </div>
-        <div>
-            <strong>
-                <p>ИТ Решения</p>
-            </strong>
-            <ul>
-                <li>Настройка IP телефонии</li>
-                <li>Установка видеонаблюдения</li>
-                <li>Контроль сотрудников</li>
-                <li>Подбор ИТ персонала</li>
-                <li>Организация Helpdesk</li>
-                <li>Обслуживание оргтехники</li>
-                <li>Разработка сайтов</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="slider1">
-
-    </div>
-    <div class="aboutUs">
-        <div id="aboutUsText">
-            <strong>
-                <p>О нас</p>
-            </strong>
-            <p>Мы занимаемся администрированием компаний уже более 15 лет.</p>
-            <p>За это время накопили большой опыт и готовы предоставить весь необходимый комплекс услуг.</p>
-            <p>Зачастую клиент не знает кому довериться.</p>
-            <p>Мы поможем разобраться во всем!</p>
-
-        </div>
-    </div>
-    <div class="slider">
-        <div class="slider__wrapper">
-            <div class="slider__item">
-                <div>
-                    <img src="img/HP.png">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div>
-                    <img src="img/cisco.png">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div>
-                    <img src="img/Dell.png">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div>
-                    <img src="img/microsoft.png">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div>
-                    <img src="img/Asterisk_logo.png">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div>
-                    <img src="img/Debian_logo.png">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div>
-                    <img src="img/Nextcloud_Logo.png">
-                </div>
-            </div>
-
-        </div>
-        <a class="slider__control slider__control_left slider__control_show" href="#" role="button"></a>
-        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
-    </div>
-    <div id="footer">
-        <div class="logo">
-            <i class="fas fa-cogs"></i>
-            <p>ИТ-инклуд</p>
-        </div>
-        <nav class="menu">
-            <div>
-                <a href="#skills">
-                    <p>Услуги</p>
-                </a>
-            </div>
-            <div>
-                <a href="#motivation">
-                    <p>Компании</p>
-                </a>
-            </div>
-            <div>
-                <a href="#contacts">
-                    <p>Контакты</p>
-                </a>
-            </div>
-        </nav>
-        <div id="contacts">
-            <strong>
-                <p>Контакты:</p>
-            </strong>
-            <ul>
-                <li>Санкт-Петербург</li>
-                <li>
-                    <i class="fas fa-phone-volume"></i>
-                    <p>(812) 999-55-22</p>
-                </li>
-                <li>
-                    <i class="far fa-envelope"></i>
-                    <p>email@email.ru</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </footer>
 
     <div class="loader">
         <div class="loader_inner"></div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="script/script.js"></script>
     <script src="script/sliderScript.js"></script>
