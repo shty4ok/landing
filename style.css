@@ -19,11 +19,11 @@ body a {
 body a:visited {
     text-decoration: none;
 }
-body h1 {
+body head h1 {
     color: white;
     text-align: center;
 }
-.header {
+header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -66,12 +66,12 @@ body h1 {
 .menu {
     margin: 0 100px;
 }
-.menu div {
+.menu li {
     display: inline-block;
     padding: 0 35px;
     border-right: 1px solid #dadada;
 }
-.menu div:hover {
+.menu li:hover {
     cursor: pointer;
     background-color: #000000;
 }
@@ -93,16 +93,16 @@ body h1 {
     margin-top: 20%;
     color: white;
 }
-#headerCenterText div {
+#headerCenterText section {
     max-width: 600px;
 }
-#headerCenterText div h1 {
+#headerCenterText section article h1 {
     font-size: 34px;
 }
-#headerCenterText div h3 {
+#headerCenterText section article h3 {
     color: cornflowerblue;
 }
-#headerCenterText div p {
+#headerCenterText section p {
     font-size: 19px;
 }
 #headerBottom {
@@ -122,7 +122,7 @@ body h1 {
 }
 #motivation {
 }
-#motivation div {
+#motivation article {
     position: absolute;
     display: flex;
     align-items: center;
@@ -147,10 +147,10 @@ body h1 {
     z-index: 3;
 }
 
-#motivation i {
+#motivation article i {
     font-size: 30px;
 }
-#motivation a {
+#motivation article a {
     text-decoration: none;
     color: cornflowerblue;
     font-size: 12px;
@@ -161,8 +161,7 @@ body h1 {
     background-color: rgb(255,255,255);
     padding: 60px 0 60px 0;
 }
-.company div strong {
-    font-size: 25px;
+.company section {
     display: flex;
     justify-content: center;
 }
@@ -171,29 +170,29 @@ body h1 {
     justify-content: center;
     align-items: center;
 }
-.company #bisness div{
+.company #bisness article{
     padding: 15px;
     border: 1px;
 }
-.company #bisness div .fa-2x{
+.company #bisness article .fa-2x{
 opacity:0; /*Элемент полностью прозрачный (невидимый)*/
 animation: show 6s 1; /* Указываем название анимации, её время и количество повторов*/
 animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
 animation-delay: 1s; /* Задержка перед началом */
 }
-.company #bisness div .fa-5x{
+.company #bisness article .fa-5x{
 opacity:0; /*Элемент полностью прозрачный (невидимый)*/
 animation: show 6s 1; /* Указываем название анимации, её время и количество повторов*/
 animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
 animation-delay: 2s; /* Задержка перед началом */
 }
-.company #bisness div .fa-8x{
+.company #bisness article .fa-8x{
 opacity:0; /*Элемент полностью прозрачный (невидимый)*/
 animation: show 6s 1; /* Указываем название анимации, её время и количество повторов*/
 animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
 animation-delay: 3s; /* Задержка перед началом */
 }
-.company #bisness div {
+.company #bisness article {
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -201,7 +200,7 @@ animation-delay: 3s; /* Задержка перед началом */
     text-transform: uppercase;
     font-weight: bold;
 }
-.outsourcing {
+.outsourcing section {
     display: flex ;
     justify-content: space-around;
     align-items: center;
@@ -209,12 +208,12 @@ animation-delay: 3s; /* Задержка перед началом */
     background-color: rgba(255,255,255,0.7);
     padding: 80px 0 80px 0;
 }
-.outsourcing div {
+.outsourcing section article {
     padding: 5px 10px;
     margin: 15px;
     width: 1000px;
 }
-.outsourcing div p {
+.outsourcing section article p {
     margin-left: 15px;
 }
 #skills {
@@ -224,18 +223,17 @@ animation-delay: 3s; /* Задержка перед началом */
     padding: 100px 0 100px 0;
     background-color: rgba(0,100,104,0.4);
 }
-#skills div {
+#skills section {
     border: rgba(255,255,255,0.1) solid 2px;
     border-radius: 10px;
     background-color: rgba(0,100,104,1);
     color: white;
 ;
 }
-#skills div:hover {
+#skills section:hover {
     box-shadow: 0 0 10px black;
 }
-#skills div strong p {
-    padding: 10px;
+#skills section h3 {
     text-align: center;
     border-radius: 3px;
 }
@@ -272,28 +270,27 @@ animation-delay: 3s; /* Задержка перед началом */
     background-color: #dde0e7;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 40px 0 40px 0;
 }
-.aboutUs #aboutUsText p{
+#aboutUsText p{
     text-align: center;
     margin: 0;
 }
-.aboutUs #aboutUsText strong p {
+#aboutUsText strong p {
     margin-bottom: 30px;
 }
-.aboutUs #bisness {
+#bisness {
     display: flex;
 }
-.aboutUs #bisness div {
+#bisness article {
     padding: 0 50px;
 }
-.aboutUs div { margin: 20px 0}
-.aboutUs div strong {
+.aboutUs article { margin: 20px 0}
+.aboutUs article h1 {
     text-transform: uppercase;
     font-size: 25px;
 }
-#footer {
+footer div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -301,23 +298,25 @@ animation-delay: 3s; /* Задержка перед началом */
     background-color: rgba(39,47,51, 0.9);
     margin: 0 0 25px 0;
 }
-#footer .logo {
+footer .logo {
     text-transform: uppercase;
 }
-#footer li {
+footer li {
     display: flex;
     align-items: center;
 }
-#contacts li p {
-    margin: 0;
-    padding: 0 0 0 10px;
-}
+
 #contacts {
     font-size: 13px;
     color: white;
 }
 #contacts li{
     list-style: none;
+    padding-bottom: 10px;
+}
+#contacts li p {
+    margin: 0;
+    padding: 0 0 0 10px;
 }
 @keyframes arrow {
     0% {
